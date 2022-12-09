@@ -20,6 +20,8 @@ public class StudentController {
 
     @GetMapping("/all-students")
     public List<StudentResponseDto> getAllStudents(){
+        String str = "trikky";
+        String tester = "this is what i wrote";
        return studentService.getAllStudents();
     }
 }
