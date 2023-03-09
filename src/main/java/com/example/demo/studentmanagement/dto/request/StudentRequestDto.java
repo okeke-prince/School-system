@@ -1,19 +1,15 @@
-package com.example.demo.studentmanagement.dto.response;
+package com.example.demo.studentmanagement.dto.request;
 
-import com.example.demo.studentmanagement.entity.Department;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotNull;
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
-public class StudentResponseDto {
-    private long id;
+@Setter
+public class StudentRequestDto {
 
     private String name;
 
@@ -23,7 +19,6 @@ public class StudentResponseDto {
 
     private int matricNumber;
 
-    private Department department;
-
+    private long departmentId;
 
 }

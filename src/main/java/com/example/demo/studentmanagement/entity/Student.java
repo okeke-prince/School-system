@@ -22,10 +22,7 @@ public class Student extends BaseEntity {
     @Column(nullable = false)
     private int matricNumber;
 
-    @ManyToOne(
-            targetEntity = Department.class,
-            cascade = CascadeType.ALL
-    )
+    @ManyToOne
     @JoinColumn(
             name = "department_id",
             referencedColumnName = "id"
